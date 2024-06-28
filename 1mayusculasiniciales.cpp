@@ -29,6 +29,8 @@ void capitalizeWords(string &texto) {
 }
 
 int main() {
+	
+	cout << "**************************************" << endl << endl;
     string textoescrito = "caceres patrimonio de la humanidad";
     capitalizeWords(textoescrito);
     cout << textoescrito << endl; // La cadena original "text" se modifica y se imprime como "Caceres Patrimonio De La Humanidad"
