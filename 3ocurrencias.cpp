@@ -13,6 +13,8 @@ int main() {
     //2. LEER LAS PALABRAS DE UNA LINEA Y ALMACENARLAS
     // Con este codigo leemos una linea completa de la entrada estandar (cin) y se almacena en una variable (lineadetexto)
     //  A diferencia de cin >> variable, que solo lee hasta el primer espacio, getline lee hasta que se encuentra un carácter de nueva línea (Enter)
+    cout << "HALLE LA CANTIDAD DE X LETRA EN EL TEXTO" << endl;
+    cout << "****************************************" << endl << endl;
     cout << "Ingresa una cadena de texto: ";
     getline(cin, lineadetexto);
 	
@@ -30,6 +32,7 @@ int main() {
         }
     }
 	
+	cout << endl;
 	///5. IMPRIMIR
     cout << "La letra '" << letra << "' aparece " << contadorletra << " veces en la cadena." << endl;
 
