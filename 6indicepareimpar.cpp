@@ -4,7 +4,8 @@
 using namespace std;
 
 int main() {
-	
+    
+	// 1. DEFINIR VECTOR Y AGREGAR ELEMENTOS AL VECTOR CON PUSH BACK
     vector<int> vec;
     vec.push_back(1);
     vec.push_back(2);
@@ -17,10 +18,14 @@ int main() {
     vec.push_back(9);
     vec.push_back(10);
     
+	// 2. DEFINIR VARIABLES
     int sum_pares = 0;
     int sum_impares = 0;
     
-    for (size_t i = 0; i < vec.size(); i++) {
+    // 3. HALLAR Y SUMAR LOS ELEMENTOS PARES E IMPARES
+    // Calcular la suma de componentes en índices pares e impares
+    // size_t = int, solo somos mas detallados de los elemtnos que manejaremos
+    for (size_t i = 0; i < vec.size(); i++) { // vec.size = 10
         if (i % 2 == 0) {
             sum_pares += vec[i];
         } else {
@@ -28,6 +33,7 @@ int main() {
         }
     }
     
+    // 4. MOSTRAR RESULTADOS
     cout << "Suma de componentes en indices pares: " << sum_pares << endl;
     cout << "Suma de componentes en indices impares: " << sum_impares << endl;
 
