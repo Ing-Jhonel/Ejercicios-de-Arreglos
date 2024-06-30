@@ -33,6 +33,7 @@ int main() {
         }
     }
     
+    cout << "*****************************************" << endl << endl;
     // 4. MOSTRAR RESULTADOS
     cout << "Suma de componentes en indices pares: " << sum_pares << endl;
     cout << "Suma de componentes en indices impares: " << sum_impares << endl;
