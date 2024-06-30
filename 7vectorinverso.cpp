@@ -31,7 +31,9 @@ int main() {
 	
     //4. IMPRIMIR EL VECTOR INVERTIDO
     // std:: reverse ya invirtio los elementos, asi que los imprimiremos
-    cout << "Vector invertido: ";
+    cout << "****************************" << endl << endl;
+    cout << "Vector normal: 1 2 3 4 5" << endl << endl;
+	cout << "Vector invertido: ";
     for (int i = 0; i < vec.size(); i++) {
         cout << vec[i] << " ";
     }
