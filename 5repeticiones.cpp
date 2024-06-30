@@ -4,6 +4,8 @@ using namespace std;
 int main() {
     int n;
     
+    cout << "CONTADOR DEL MENOR Y MAYOR" << endl;
+    cout << "**************************" << endl << endl;
     //1. LEER NUMEROS
     cout << "Ingrese la cantidad de numeros: ";
     cin >> n;
@@ -12,10 +14,12 @@ int main() {
         cout << "Invalido. Intente de nuevo: ";
         cin >> n;
     }
-
+	
+	cout << endl;
     int numeros[n];
-    cout << "Ingrese los numeros:" << endl;
+    cout << "Ingrese los numeros:" << endl << endl;
     for (int i = 0; i < n; ++i) {
+    	cout << "- ";
         cin >> numeros[i];
     }
 
@@ -43,10 +47,11 @@ int main() {
 			contadorMenor++;  // si se cumple, se agrega +1
 		}
 	}
-
+	
+	cout << endl;
     //4. MOSTRAR RESULTADOS
     cout << "El mayor numero ingresado es: " << mayor << endl;
-    cout << "Se repite " << contadorMayor << " veces." << endl;
+    cout << "Se repite " << contadorMayor << " veces." << endl << endl;
     cout << "El menor numero ingresado es: " << menor << endl;
     cout << "Se repite " << contadorMenor << " veces." << endl;
 
