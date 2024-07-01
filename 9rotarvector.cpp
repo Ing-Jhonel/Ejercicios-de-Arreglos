@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
 	
+	cout << "***********************" << endl << endl;
     //1.DECLARAR ARREGLO
     int arr[] = {1, 2, 3, 4, 5};
     int arr_tamano = sizeof(arr) / sizeof(int); // o sizeof(arr[0]));
