@@ -5,14 +5,16 @@ using namespace std;
 
 int main() {
 	
+	cout << "AVERIGUEU SI UN NUMERO ES CAPICUA" << endl;
+	cout << "*********************************" << endl << endl;
 	//1. LEER EL NUMERO
-    long long numero;
+    long long int numero;
     cout << "Introduce un numero de 10 cifras: ";
     cin >> numero;
 
     // Verificar si el número tiene 10 dígitos
     while (numero < 1000000000 || numero > 9999999999) {
-        cout << "El numero debe tener exactamente 10 cifras." << endl;
+        cout << "Introduce un numero de 10 cifras: ";
         cin >> numero;
     }
 
@@ -29,14 +31,16 @@ int main() {
     vector<int> vecReverso = vec;
     reverse(vecReverso.begin(), vecReverso.end());
     // vec = [4, 3, 2, 1] ---> vecReverso = [1, 2, 3, 4]
-
+	
+	cout << endl;
+	cout << "**************" << endl;
     //4. COMPARAR AMBOS VECTORES
     if (vec == vecReverso) { //si son iguales quiere decir que es capicua
         cout << "Si es capicua." << endl;
     } else {
         cout << "No es capicua." << endl;
     }
-
+	cout << "**************" << endl;
     return 0;
 }
 
