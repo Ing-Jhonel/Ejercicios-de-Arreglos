@@ -1,38 +1,43 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-bool esCapicua(const vector<int>& vec) {
-    int n = vec.size();
-    for (int i = 0; i < n / 2; ++i) {
-        if (vec[i] != vec[n - 1 - i]) {
-            return false;
+int main() {
+    
+	// 1. DEFINIR VECTOR Y AGREGAR ELEMENTOS AL VECTOR CON PUSH BACK
+    vector<int> vec;
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+    vec.push_back(4);
+    vec.push_back(5);
+    vec.push_back(6);
+    vec.push_back(7);
+    vec.push_back(8);
+    vec.push_back(9);
+    vec.push_back(10);
+    
+	// 2. DEFINIR VARIABLES
+    int sum_pares = 0;
+    int sum_impares = 0;
+    
+    // 3. HALLAR Y SUMAR LOS ELEMENTOS PARES E IMPARES
+    // Calcular la suma de componentes en índices pares e impares
+    // size_t = int, solo somos mas detallados de los elemtnos que manejaremos
+    for (size_t i = 0; i < vec.size(); i++) { // vec.size = 10
+        if (i % 2 == 0) {
+            sum_pares += vec[i];
+        } else {
+            sum_impares += vec[i];
         }
     }
-    return true;
-}
-
-int main() {
-    int numero;
-    cout << "Introduce un número: ";
-    cin >> numero;
-
-    // Convertimos el número en un vector de dígitos
-    vector<int> digitos;
-    int temp = numero;
-    while (temp > 0) {
-        digitos.push_back(temp % 10);
-        temp /= 10;
-    }
-
-    // Comprobamos si es capicúa
-    if (esCapicua(digitos)) {
-        cout << "El número " << numero << " es capicúa." << endl;
-    } else {
-        cout << "El número " << numero << " no es capicúa." << endl;
-    }
+    
+    cout << "*****************************************" << endl << endl;
+    // 4. MOSTRAR RESULTADOS
+    cout << "Suma de componentes en indices pares: " << sum_pares << endl;
+    cout << "Suma de componentes en indices impares: " << sum_impares << endl;
 
     return 0;
 }
-
 
