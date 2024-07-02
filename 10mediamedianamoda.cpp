@@ -18,7 +18,7 @@ int main() {
     }
 
     // Mostrar los números generados
-    cout << "Números generados:" << endl;
+    cout << "Numeros generados:" << endl;
     for (size_t i = 0; i < numeros.size(); ++i) {
         cout << numeros[i] << " ";
     }
@@ -57,7 +57,6 @@ int main() {
     cout << "Media: " << media << endl;
     cout << "Mediana: " << mediana << endl;
     cout << "Moda: " << moda << endl;
-
     return 0;
 }
 
