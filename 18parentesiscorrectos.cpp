@@ -35,7 +35,6 @@ int main() {
     } else {
         cout << "La expresion no esta balanceada." << endl;
     }
-
     return 0;
 }
 
