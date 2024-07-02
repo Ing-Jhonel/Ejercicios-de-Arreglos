@@ -43,6 +43,5 @@ int main() {
         cout << vec[i] << " ";
     }
     cout << endl;
-
     return 0;
 }
